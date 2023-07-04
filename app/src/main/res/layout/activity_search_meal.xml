@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AFD3E2"
+    tools:context=".SearchMeal">
+
+    <EditText
+        android:id="@+id/ingredientEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:autofillHints=""
+        android:hint="@string/enter_ingredient"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:id="@+id/mealScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingredientEditText"
+        app:layout_constraintBottom_toTopOf="@+id/retrieveSearchMeal">
+    <TextView
+        android:id="@+id/displayMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#146C94"
+        android:textAlignment="center">
+    </TextView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/retrieveSearchMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retrieve_meals"
+        android:backgroundTint="#19A7CE"
+        app:layout_constraintBottom_toTopOf="@id/saveSearchToDB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mealScrollView" />
+
+    <Button
+        android:id="@+id/saveSearchToDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_meals_to_database"
+        android:backgroundTint="#19A7CE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/retrieveSearchMeal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

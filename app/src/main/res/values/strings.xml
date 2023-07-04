@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CW2_meal</string>
+    <string name="add_meals">Add Meals to DB</string>
+    <string name="search_meals_by_ingredient">Search for Meals By Ingredient</string>
+    <string name="search_for_meals">Search for Meals</string>
+    <string name="cooking_guide">Cooking Guide</string>
+    <string name="enter_ingredient">Enter ingredient</string>
+    <string name="save_meals_to_database">Save meals to Database</string>
+    <string name="retrieve_meals">Retrieve Meals</string>
+    <string name="search_from_database">Search from Database</string>
+    <string name="search">Search</string>
+    <string name="meal_image">Meal image</string>
+    <string name="meal_image_view">Meal Image View</string>
+    <string name="food_image">Food image</string>
+    <string name="search_meal_from_web_service">Search Meal from Web service</string>
+    <string name="meal_detail">Meal Detail</string>
+    <string name="enter_the_meal_name_to_search_from_web">Enter the Meal name to search from Web</string>
+    <string name="close_button">Close Button</string>
+</resources>
